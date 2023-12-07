@@ -115,14 +115,24 @@ body {
 }
 
 .results-carousel .item {
-  margin: 5px;
-  overflow: hidden;
-  padding: 20px;
-  font-size: 0;
+  /* margin: 5px; */
+  /* overflow: hidden; */
+  /* padding: 20px; */
+  /* font-size: 0; */
+  align-items: center;
+  align-content: center;
+  text-align: center;
 }
 
 .results-carousel video {
   margin: 0;
+}
+
+.results-carousel img {
+  margin: 0;
+  width: 800;
+  height: 800;
+  object-fit: cover;
 }
 
 .slider-pagination .slider-page {
