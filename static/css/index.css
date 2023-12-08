@@ -144,4 +144,11 @@ body {
 }
 
 
+/* 添加 CSS 样式 */
+.column.new img {
+  height: 100%; /* 设置图片高度为父元素高度的100% */
+  width: auto; /* 让宽度按比例自适应 */
+  object-fit: contain; /* 保持图像比例并适应父容器 */
+}
+
 

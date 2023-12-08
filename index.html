@@ -217,10 +217,43 @@
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title is-3">Visualization</h2>
+      <h2 class="title is-3">Pseudo Label Quality</h2>
+      <div class="content has-text-justified">
+        <!-- <p>
+          <strong>1. Pseudo label quality comparison.</strong>
+        </p> -->
+        <p>
+          Left: Visualizing 3D pseudo labels.
+          Right: Comparisons of IoU obtained with different methods on Waymo validation dataset. 
+          SAM means the process of obtaining masks through the use of SAM, where 2D boxes are employed as prompts.
+        </p>
+      </div>
+      <div class="columns">
+        <div class="column new">
+          <img src="static/images/SPG.png" alt="GT Image"/>
+          <div class="content has-text-centered">
+            <!-- <p>GT Image</p> -->
+          </div>
+        </div>
+        <div class="column new">
+          <img src="static/images/SPG2.png" alt="Volume-rendered normals"/>
+          <div class="content has-text-centered">
+            <!-- <p>Volume-rendered normals</p> -->
+          </div>
+        </div>
+      </div>
+</div>
+</section>
+<!-- End image container -->
+
+<!-- Image container -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Main Results</h2>
       <div class="content has-text-justified">
         <p>
-          <strong>2D Instance Segmentation</strong>
+          <strong>2D Instance Segmentation.</strong>
         </p>
       </div>
       <div class="columns">
@@ -239,7 +272,7 @@
       </div>
       <div class="content has-text-justified">
         <p>
-          <strong>3D Instance Segmentation</strong>
+          <strong>3D Instance Segmentation.</strong>
         </p>
       </div>
       <div class="columns">
@@ -258,11 +291,12 @@
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
+      <h2 class="title is-3">Ring Segment</h2>
       <div class="content has-text-justified">
-        <p>
-          <strong>Point Cloud Presentation: Ring Segments.</strong>
-        </p>
-        <p>Different colors represent different ring segments.</p>
+        <p>To leverage the prior information about the depth variation of the point cloud, we propose the
+          Depth Clustering Segment (DCS) algorithm to segment the point cloud. </p>
+        <p>  
+          As shown in the following images, different colors represent different ring segments.</p>
       </div>
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item">
